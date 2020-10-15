@@ -1,0 +1,13 @@
+body{
+    background-color: #f8f2fd;
+    padding-bottom: 2em;
+}
+
+h1 {
+    font-family: 'Ranchers', cursive;
+    color: #660066;
+}
+
+.donacija {
+    font-size: 1.1em;
+}
