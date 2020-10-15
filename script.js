@@ -7,7 +7,7 @@ $(document).ready(function(){
           <div class="modal-content">
             <div class="modal-body text-center">
               <img src="dollar.jpg" style="width:5em;">
-              <p><h4>Hvala na donaciji!</h4> <br> Sa vašeg računa je upravo skinuto <h4>${rand}.00 dinara</h4> Suma koju donirate se automatski određuje u sistemu na osnovu vašeg broja osmeha dok ste čitali ove bisere.</p>
+              <p><h4>Hvala na donaciji!</h4> <br> Sa vašeg računa je upravo skinuto <h4>${rand},00 dinara</h4> Suma koju donirate se automatski određuje u sistemu na osnovu vašeg broja osmeha dok ste čitali ove bisere.</p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Zatvori</button>
@@ -25,7 +25,7 @@ $(document).ready(function(){
     };
 
     function numberWithCommas(x) {
-        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
     }
 
 
