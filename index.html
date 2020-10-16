@@ -105,15 +105,29 @@
 
 
         </div>
-        <p class="lead mb-3 mt-5 donacija">Ako vam se sve ovo dopada, donirajte autoru ove stranice malo para da može da nastavi da održava ovaj preskupi web sajt.
+        <p class="lead mb-3 mt-5 donacija">Ako vam se sve ovo dopada, donirajte autoru ove stranice malo para da može da
+            nastavi da održava ovaj preskupi web sajt.
         </p>
         <button class="btn btn-block btn-success" id="donacija">DONIRAJ</button>
+
 
     </div>
 
     <div id="modal"></div>
 
     <script src="script.js"></script>
+    <script>
+        function getAway() {
+            $('#ponisti').on({
+                mouseover: function () {
+                    $(this).css({
+                        bottom: (Math.random() * 300) + "px",
+                        left: (Math.random() * 300) + "px",
+                    });
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>

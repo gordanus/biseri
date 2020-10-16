@@ -10,4 +10,11 @@ h1 {
 
 .donacija {
     font-size: 1.1em;
+
+}
+
+#ponisti {
+    position:absolute;
+    bottom:10px;
+    left:10px;
 }
