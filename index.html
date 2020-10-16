@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./9039fdac9d0086ace6964237e3bc6788.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
@@ -110,8 +111,14 @@
                 </div>
                 <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
                     <div class="card-body">
-                        Ovo možda i ne spada baš u bisere, ali odlučio sam da uvrstim to ovde.<br>Obično se zeva kada smo pospani ili neposredno posle buđenja. Saška je jedina osoba za koju znam da zeva dok spava. 😂
+                        Ovo možda i ne spada baš u bisere, ali odlučio sam da uvrstim to ovde.<br>Obično se zeva kada
+                        smo pospani ili neposredno posle buđenja. Saška je jedina osoba za koju znam da zeva dok spava.
+                        😂
                     </div>
+                    <div class="likeBtn">
+                        <i></i>
+                        <span>liked!</span>
+                      </div>
                 </div>
             </div>
 
@@ -132,6 +139,13 @@
     <div id="modal"></div>
 
     <script src="script.js"></script>
+    <script>
+        $(function () {
+            $("i").click(function () {
+                $("i,span").toggleClass("press", 1000);
+            });
+        });
+    </script>
 </body>
 
 </html>
