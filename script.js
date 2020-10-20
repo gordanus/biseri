@@ -1,7 +1,7 @@
-$(document).ready(function(){
-    $('#donacija').click(function(){
-        var rand = numberWithCommas(getRandomInt(5000,10000))
-        $('#modal').html(`
+$(document).ready(function () {
+  $('#donacija').click(function () {
+    var rand = numberWithCommas(getRandomInt(5000, 10000))
+    $('#modal').html(`
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -15,21 +15,31 @@ $(document).ready(function(){
           </div>
         </div>
       </div>`);
-      $('#exampleModal').modal('show');
-    });
+    $('#exampleModal').modal('show');
+  });
 
-    function getRandomInt(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+  likeButtons();
+
+  function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+  };
+
+  function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  }
+
+  function likeButtons() {
+    var cards = $(".card-body");
+    for (i = 0; i < cards.length; i++) {
+      $(cards[i]).append(`
+      <div class="like-${i} text-center" onclick="doLike(this)">
+        <i class="fa fa-heart" aria-hidden="true"> Like</i>
+      </div>
+      `);
     };
-
-    function numberWithCommas(x) {
-        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-    }
-    
-    
-    
+  };
 
 
 

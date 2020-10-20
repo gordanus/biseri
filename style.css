@@ -12,3 +12,12 @@ h1 {
     font-size: 1.1em;
 
 }
+
+i{
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.liked{
+    color: red;
+}

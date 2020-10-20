@@ -163,19 +163,15 @@
             nastavi da održava ovaj preskupi web sajt.
         </p>
         <button class="btn btn-block btn-success" id="donacija">DONIRAJ</button>
-
-
     </div>
 
     <div id="modal"></div>
 
     <script src="script.js"></script>
     <script>
-        $(function () {
-            $("i").click(function () {
-                $("i,span").toggleClass("press", 1000);
-            });
-        });
+        function doLike(elem){
+            $(elem).toggleClass("liked");
+        }
     </script>
 </body>
 
